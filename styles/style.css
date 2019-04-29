@@ -6,6 +6,7 @@
     display: grid;
     margin: 0 auto;
     padding: 60px;
+    font-family: Domine, serif;
     grid-gap: 20px;
     grid-template-areas: "header header header header"
         "links image image info"
@@ -14,32 +15,33 @@
 
 .header {
     grid-area: header;
-    background-color: salmon;
+    background-color: floralwhite;
     border-radius: 10px;
     padding: 20px;
 }
 
 .links {
     grid-area: links;
-    background-color: chartreuse;
+    background-color: floralwhite;
     border-radius: 10px;
     padding: 20px;
 }
 
 .image {
     grid-area: image;
-    background-color: deepskyblue;
+    background-color: floralwhite;
     border-radius: 10px;
     padding: 20px;
 }
 
 .image #image {
     border-radius: 10px;
+    width: 100%;
 }
 .content {
     grid-area: content;
     padding: 20px;
-    background-color: rebeccapurple;
+    background-color: floralwhite;
     border-radius: 10px;
     background-image: url(../images/davidbg2.png);
     background-repeat: no-repeat;
@@ -51,7 +53,7 @@
 .info {
     grid-area: info;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: floralwhite;
     border-radius: 10px;
     font-size: 26px;
     line-height: 1.2;
@@ -71,4 +73,20 @@
       'info info info' 
       'content content content';
   }
+}
+
+ul {
+    list-style-type: circle;
+    border-left: 5px solid crimson;
+}
+
+a {
+    font-size: 16px;
+    line-height: 2;
+    text-decoration: none;
+    
+}
+
+li {
+    line-height: 2;
 }
