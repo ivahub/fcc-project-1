@@ -1,16 +1,12 @@
-* {
-  box-sizing: border-box;
-}
-
 #main {
     display: grid;
     margin: 0 auto;
     padding: 60px;
-    font-family: Domine, serif;
+    font-family: 'Scope One', serif;
     grid-gap: 20px;
-    grid-template-areas: "header header header header"
-        "links image image info"
-        "content content content content"
+    grid-template-areas: "header header header header header"
+        "links image image image info"
+        "content content content content content"
 }
 
 .header {
@@ -20,30 +16,34 @@
     padding: 20px;
 }
 
+
 .links {
     grid-area: links;
     background-color: floralwhite;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 40px 40px 40px;
 }
 
 .image {
     grid-area: image;
     background-color: floralwhite;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .image #image {
     border-radius: 10px;
-    width: 100%;
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: 0 auto;
 }
 .content {
     grid-area: content;
     padding: 20px;
     background-color: floralwhite;
     border-radius: 10px;
-    background-image: url(../images/davidbg2.png);
+    background-image: url('https://i.ibb.co/k0pR6GT/davidbg3.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     font-size: 20px;
@@ -52,12 +52,13 @@
 
 .info {
     grid-area: info;
-    padding: 20px;
+    padding: 40px;
     background-color: floralwhite;
     border-radius: 10px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
-    text-shadow: 1px white;
+    text-align: justify;
+
 }
 #title {
     font-size: 50px;
@@ -81,12 +82,25 @@ ul {
 }
 
 a {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     text-decoration: none;
-    
+}
+
+h1 {
+    color: black;
+    text-shadow: 1px 1px 1px crimson;
+}
+
+.info a {
+    font-size: 24px;
+    line-height: 1;
 }
 
 li {
     line-height: 2;
+}
+
+#img-caption {
+    text-align: center;
 }
