@@ -43,7 +43,7 @@
     padding: 20px;
     background-color: floralwhite;
     border-radius: 10px;
-    background-image: url('https://i.ibb.co/k0pR6GT/davidbg3.png');
+    background-image: url(../images/davidbg3.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     font-size: 20px;
@@ -69,8 +69,8 @@
   #main  {
     grid-template-areas: 
       'header header header' 
-      'links links links' 
       'image image image' 
+      'links links links' 
       'info info info' 
       'content content content';
   }
